@@ -1,0 +1,18 @@
+In this project we are going to create an express and node app.
+Where we will use docker to deploy it.
+
+
+
+===============================================
+commands
+
+1. docker build . ./   ----> This will build docker image that using the Dockerfile located in .
+2. docker build -t node-app-image .   ---> this will name the image in that we build
+3. docker image ls  ---> this will show the image that are available
+4. docker run node-app-image   -----> this will run the docker image and create a container
+5. docker run -d --name node-app node-app-image     ------> this will run the docker image and create and container with naem node-app
+6. docker ps ------> will list the docker contianer running at that point.
+7. docker ps -a   ------> will list all the docker container
+=================================================
+copying everything also copyies the docker file which is not need because we have already created our image
+ main
